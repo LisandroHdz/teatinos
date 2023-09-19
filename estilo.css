@@ -1,0 +1,23 @@
+.navbar-brand{
+}
+
+.imgl{
+    background-image: url(SANTA_ANDREA.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+  
+    height: 90vh;
+
+   
+}
+    
+
+
+p{
+    text-align: left;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+
