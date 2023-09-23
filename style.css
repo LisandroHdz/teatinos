@@ -1,0 +1,5 @@
+#main .carousel-inner img{
+	max-height: 80vh;
+	object-fit: cover;
+	
+}
