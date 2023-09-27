@@ -44,7 +44,7 @@ text-jdh{
     object-fit: conver;
 }
 
-.gallery_item:nth-child(14){
+.gallery_item:nth-child(5){
     grid-column-start: span 2;
 
 }
