@@ -9,69 +9,72 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg " style = "background-color: #8C6E4A;!" >
-      <div class="container-fluid" style = "background-color: #8C6E4A;!" >
-        <a class="navbar-brand" href="#"><img src="imagen1.png" alt="logo" width="100px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: aliceblue;">QUIENES SOMOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: aliceblue;">HISTORIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="galeria.html" style="color: aliceblue;">GALERIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html" style="color: aliceblue;">INICIO</a>
-            </li>
-          </ul>
+        <div class="container-fluid" style = "background-color: #8C6E4A;!" >
+          <a class="navbar-brand" href="#"><img src="imagen1.png" alt="logo" width="100px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: aliceblue;">QUIENES SOMOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: aliceblue;">HISTORIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html" style="color: aliceblue;">GALERIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" style="color: aliceblue;">INICIO</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
+      </nav>
         
-        <div id="contenido-nosotros">
-				
-            <div id="izquierda">
-                <p class="descripcion-pagina texto-contacto">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br>
-                    Telélefono: <strong>2626-2626</strong><br>
-                    Celular: <strong>7575-7575</strong><br>
-                    Email: <strong><a href="mailto: juanventura200@gmail.com" class="email-contacto">juanventura200@gmail.com</a></strong>
-                </p>
-            </div>	
-
-
-            <div id="derecha">
-                <form action="#" method="POST">
-                    <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="nombre-mensaje">
-                    <br>
-                    <input type="email" name="correo" placeholder="Ingresa tu coreo" class="email-asunto">
-
-                    <input type="text" name="asunto" placeholder="Ingresa el asunto" class="email-asunto"><br>
-
-                    <textarea name="mensaje" placeholder="Ingrese su mensaje " class="nombre-mensaje"></textarea><br>
-
-                    <input type="submit" name="enviar" value="Enviar consulta">
-                </form>
-            </div>
-
-            <div id="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.2518928319473!2d-98.26333972566906!3d18.964479755465824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb8f976150c6f%3A0x1392f6a66404ef07!2sSagrado%20Coraz%C3%B3n%20de%20Jesus%20Y%20San%20Cayetano!5e0!3m2!1ses-419!2smx!4v1696177603923!5m2!1ses-419!2smx" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            
-
+    <div class="w-50 border mx-auto p-2">
+      <figure class="text-center">
+        <h1 class="h3">DEJA TU COMENTARIO Y EN BREVE TE ESTAREMOS CONTACTANDO</h1>
+      </figure>
+  
+      <form action="procesar.php" method="post">
+        <div class="form-group">
+          <label lass="d-block" for="nombre">NOMBRE</label>
+          <input class="w-100" type="text" id="nombre" name="nombre" >
         </div>
 
+        <div class="form-group">
+          <label class="d-block" for="nombre">ASUNTO</label>
+          <input type="text" id="asunto" name="asunto" class="w-100">
+        </div>
 
-      </div>
-    </nav>
+        <div class="form-group">
+          <label class="d-block" for="nombre">COMENTARIO</label>
+          <textarea class="w-100" name="comentartio" id="comentartio" cols="30" rows="10">DEJA AQUI TU COMENTARIO</textarea>
+        </div>
 
+        <div class="form-group">
+          <label class="d-block" for="nombre">E-MAIL</label>
+          <input type="email" id="email" name="email" class="w-100">
+        </div>
 
+        <div class="form-group">
+          <label class="d-block" for="nombre">TELEFONO</label>
+          <input type="number" id="numero" name="numero" class="w-100">
+        </div>
 
+        <div>
+          <input type="submit" id="btn" name="botn" class="w-100 mt-3 btn btn-primary">
+        </div>
+
+      </form>
+
+    </div>
+       
+    
+
+    
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
